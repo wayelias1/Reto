@@ -1,0 +1,234 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1{
+    font-size: 20px;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+.header a{
+    margin: auto 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #fff;
+    border: 2px solid rgb(200,200,200);
+    font-weight: bold;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.container{
+    background-color: rgb(230, 230, 230);
+    padding: 30px 0;
+}
+
+.container-presentacion{
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+.container-presentacion div{
+    width: 50%;
+}
+
+.container-presentacion img{
+    margin: 0px auto;
+    width: 100%;
+    max-width: 430px;
+    object-fit: cover;
+}
+
+.container-descripcion{
+    margin: 0px auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.container-descripcion span{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.descripcion-foto{
+    display: flex;
+    margin: 0 30px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-skills{
+    margin: 80px 50px;
+}
+
+.skill-box-title{
+    display: inline-block;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.skill-box-container{
+    display: flex;
+    margin: 30px 0;
+}
+
+.skill-box-title span{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.skill-box{
+    width: 30%;
+    margin: 30px 40px;
+    text-align: center;
+}
+
+.skill-box span{
+    font-weight: bold;
+}
+
+.box-github{
+    margin: 50px 0;
+}
+
+.github{
+    background-color: rgb(10, 170, 130);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 17px;
+}
+
+.github:hover{
+    background-color: rgb(10, 140, 100);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr; /*aplica a grids contenedores*/
+    grid-template-columns: 1fr 1fr 1fr; /*aplica a grids contenedores el fr es un flex row que el espacio que sobra lo agarra*/
+    grid-gap: 13px;
+}
+
+.grid-item{
+    width: 100%;
+}
+
+.grid-img img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.grid-item span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.grid-item p{
+    font-size: 14px;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+footer p{
+    margin: 20px;
+    font-size: 4rem;
+}
+
+footer b{
+    margin: 20px;
+    font-size: 2.7rem;
+    color: rgb(60, 110, 220);
+}
+
+.f-info{
+    margin: 40px 0;
+}
+
+.contactos{
+    display: flex;
+    margin: 70px 20px 0px 20px;
+    padding: 10px;
+}
+
+.contactos a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contacto-item{
+    margin: 0 auto;
+}
+
+.contacto-item i{
+    padding: 3px;
+}
+
+@media (max-width: 730px) {
+    .grid-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr; /*aplica a grids contenedores*/
+        grid-template-columns: 1fr 1fr; /*aplica a grids contenedores el fr es un flex row que el espacio que sobra lo agarra*/
+        grid-gap: 13px;
+    }
+}
+
+@media (max-width: 690px) {
+    .container-presentacion{
+        flex-direction: column;
+        margin: 30px 30px;
+    }
+    
+    .container-presentacion div{
+        width: 100%;
+    }
+
+    .container-descripcion{
+        padding: 0px;
+    }
+
+    .descripcion-foto{
+        height: 450px;
+    }
+
+    .container-skills{
+        margin: 80px 25px;
+    }
+    
+    .skill-box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box{
+        margin: 30px 15px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 530px) {
+    .grid-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /*aplica a grids contenedores*/
+        grid-template-columns: 1fr; /*aplica a grids contenedores el fr es un flex row que el espacio que sobra lo agarra*/
+        grid-gap: 13px;
+    }
+}
